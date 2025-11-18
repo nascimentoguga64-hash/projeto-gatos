@@ -3,13 +3,17 @@
    --cor-branco: hsl(0, 0%, 100%);
    --cor-azulado: hsl(217, 12%, 38%);
    --cor-acinzelado:  hsl(0, 4%, 10%);
+   --cor-branco-off: hsl(0, 35%, 91%);
+   --cor-azul: hsl(218, 25%, 47%);
+   --cor-azul-escuro: hsl(195, 91%, 25%);
+   --cor-cinza:  hsla(180, 100%, 94%, 0.25);
 
-   --fonte-titulo: 'serif', sans-serif;
-   --font-corpo: 'Times New Roman', sans-serif;
+   --fonte-titulo: 'Mulish', sans-serif;
+   --font-corpo: 'Mulish', sans-serif;
 }
 
 
-.container {display: flex align-items;}
+.container {display:flex ;}
 
 .lista-artigos {
     display: block;
@@ -17,7 +21,7 @@
 
 .artigo-item {
     display: flex;
-    align-items: flex-start;
+    justify-content: flex-start;
     margin-bottom: 15px;
     padding: 10px 0;
     text-decoration: none;
@@ -28,9 +32,11 @@
 .artigo-item img {
     width: 100px;
     height: 80px;
+    padding-left: 5px;
     object-fit: cover;
     margin-right: 15px;
-    flex-shrink: 0;
+    align-items: inherit;
+    
 }
 
 .conteudo-flex {
@@ -39,7 +45,6 @@
  
 .conteudo-flex h3 {
     color: var(--cor-acinzelado);
-    font-family: var(--fonte-titulo);
     margin-top: 0;
     margin-bottom: 5px;
     font-size: 1em;
@@ -50,17 +55,72 @@
 
 .conteudo-flex p {
     color: var(--cor-acinzelado);
-    font-family: var(--font-corpo);
     margin-top: 0;
     font-size: 1rem;
 }
 
-section p {
-    font-family: var(--font-corpo);
-}
 
-section h2 {font-family: var(--fonte-titulo);}
 
 html, body {
     height: 100%;
+    font-family: var(--font-corpo);
+    font-family: var(--fonte-titulo);
+}
+
+.rodape {
+    background-color: var(--cor-azul);
+    padding-bottom: 5px;
+    padding-top: 5px;
+    
+}
+
+.rodape p {
+    color: var(--cor-branco-off);
+    text-align: center;
+}
+
+
+
+.top-barra {
+    background:  var(--cor-azul-escuro);
+    width: 90%; 
+    height: auto;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 10px;
+    display: flex;  
+    align-items: center;
+    
+    gap: 12px;
+    position: absolute;
+    
+
+}
+
+.top-barra input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    background: var(--cor-cinza);
+    color: var(--cor-branco);
+}
+
+.top-barra input::placeholder {
+    color:var(--cor-branco);
+    opacity: 0.8;
+}
+
+.icone-esquerda, .icone-direita {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.imagem {
+    
+    display: block;
+    width: 100%;
+    
 }
