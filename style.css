@@ -19,6 +19,8 @@ html, body {
 
 .curtir {
     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     gap: 12px;
     margin: 10px 0 20px;
     align-items: center;  
@@ -30,8 +32,10 @@ html, body {
     cursor: pointer;
 }
 
-.lista-artigos{
-    display: block;
+.lista-artigo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .artigo-item {
@@ -91,6 +95,8 @@ html, body {
     padding: 10px;
 
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     gap: 12px;
 }
