@@ -49,11 +49,11 @@ main section {
 
 .artigo-item {
     display:flex;
-    align-items: flex-start;
-    gap: 12px;
+    align-items: center;
+    gap: 15px;
     padding: 10px 0;
     text-decoration: none;
-    color: inherit;
+
 }
 
 .artigo-item h3, .artigo-item p {
@@ -61,10 +61,10 @@ main section {
 }
 
 .artigo-item img {
-    width: 90px;
-    height: 70px;
+    width: 120px;
+    height: 90px;
     object-fit: cover;
-    border-radius: 4px;
+    border-radius: 6px;
 }
 
 .conteudo-flex {
